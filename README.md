@@ -1,40 +1,20 @@
-# [Tailwind VPN Landingpage](https://next-landing-vpn.vercel.app/) - Free Landingpage Template Apps
+# [BoxPay](https://3000-onyedikachidavi-paylock-x22d4nhcib4.ws-eu81.gitpod.io) - Send and recieve redrawable ERC20 Tokens (gassless) via a 4 digit code sent using PUSH communication protocol
 
-Tailwind VPN Landingpage is an open source, apps landing page template for [Tailwind CSS](https://tailwindcss.com/) and[ NextJS](nextjs.org/) coded by [Faldi](twitter.com/f2aldi) and design from [Didi](https://twitter.com/didiikurniawann).
+## Features
+- Withdraw or Redeem payments without paying gas.
+- 0.5% fee (per transaction) capped at $50USD (determined on chain using Chainlink Price Feed Oracles). 
+- Send payment code via PUSH protocol
 
-![Landing Page](./landingpage.png)
+![image](https://user-images.githubusercontent.com/51977119/211654459-f98e1e8e-da74-4002-9977-0ebfee21f131.png)
+
+![image](https://user-images.githubusercontent.com/51977119/211654504-4829bef1-22a2-416c-a13a-9babb541e845.png)
+
 
 ## Getting Started
 
 Choose one of the following options to get started:
 
-- [Download the latest release](https://github.com/naufaldi/next-landing-vpn/archive/main.zip)
-- Clone the repo: `git clone https://github.com/naufaldi/next-landing-vpn.git`
+- Clone the repo: `git clone https://github.com/onyedikachi-david/box-pay.git`
 - Fork the repo
-
-## About the Template
-
-- Template building using NextJS Version 10
-- Tailwind v2.0
-
-## Feature Template
-
-- Using [NextJS Image](https://nextjs.org/docs/api-reference/next/image) for Image Optimization
-- Slider using [React Slick](https://react-slick.neostack.com/docs/api)
-- Smooth Scrolling and Active menu using [React Scroll](https://www.npmjs.com/package/react-scroll)
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/naufaldi/next-landing-vpn/issues/new) here on GitHub.
-
-## Creator
-
-[Tailwind VPN Landingpage](https://next-landing-vpn.vercel.app/) was coded and modified by and is maintained by **[me](https://github.com/naufaldi/)**, and dekstop design by [Didi Kurniawan](https://twitter.com/didiikurniawann)
-
-## Copyright and License
-
-Code released under the MIT license.
-
-## To Do List Add Feature
-
-- [ ] Animation using Framer Motion
+- npm i
+- npm run dev

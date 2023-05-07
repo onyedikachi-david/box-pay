@@ -297,10 +297,10 @@ contract PayLock is ERC2771Context, Ownable {
      * Emits a {PaymentWithdrawn} event.
      */
 
-    function withdrawIssuerPayment(uint256 _code, uint256 _receiverId)
-        public
-        payable
-    {
+    function withdrawIssuerPayment(
+        uint256 _code,
+        uint256 _receiverId
+    ) public payable {
         // Lookup issued payment in issuer's issued transactions
         payment[] memory issuedPayments = s_issuedPayments[_msgSender()];
         // No reedemable payments
@@ -490,11 +490,9 @@ contract PayLock is ERC2771Context, Ownable {
     }
 
     // onlyOwner function -  Withdraws ERC20 protocol fees
-    function withdrawPaySafeBalance(address _tokenAddress)
-        public
-        payable
-        onlyOwner
-    {
+    function withdrawPaySafeBalance(
+        address _tokenAddress
+    ) public payable onlyOwner {
         if (_tokenAddress == i_USDCAddress) {
             bool success = IERC20(i_USDCAddress).transfer(
                 msg.sender,
@@ -538,20 +536,16 @@ contract PayLock is ERC2771Context, Ownable {
     }
 
     // gets all issued payments
-    function getIssuedPayments(address user)
-        public
-        view
-        returns (payment[] memory)
-    {
+    function getIssuedPayments(
+        address user
+    ) public view returns (payment[] memory) {
         return s_issuedPayments[user];
     }
 
     // gets all redeemable payments
-    function getRedeemablePayments(address user)
-        public
-        view
-        returns (payment[] memory)
-    {
+    function getRedeemablePayments(
+        address user
+    ) public view returns (payment[] memory) {
         return s_redeemablePayments[user];
     }
 

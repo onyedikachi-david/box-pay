@@ -1,4 +1,4 @@
-# [video](https://youtu.be/Ic4tC5nf0E8) - Send and recieve redrawable ERC20 Tokens (gassless) via a 4 digit code sent using PUSH communication protocol
+# [video](https://youtu.be/Ic4tC5nf0E8) - Send and recieve redrawable ERC20 Tokens (gassless) via a 4 digit code sent using Ethermail
 
 ## Features
 - Withdraw or Redeem payments without paying gas.

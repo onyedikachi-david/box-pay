@@ -1,9 +1,9 @@
-# [BoxPay](https://3000-onyedikachidavi-paylock-x22d4nhcib4.ws-eu81.gitpod.io) - Send and recieve redrawable ERC20 Tokens (gassless) via a 4 digit code sent using PUSH communication protocol
+# [video](https://youtu.be/Ic4tC5nf0E8) - Send and recieve redrawable ERC20 Tokens (gassless) via a 4 digit code sent using PUSH communication protocol
 
 ## Features
 - Withdraw or Redeem payments without paying gas.
 - 0.5% fee (per transaction) capped at $50USD (determined on chain using Chainlink Price Feed Oracles). 
-- Send payment code via PUSH protocol
+- Send payment code via *ethermail*
 
 ![image](https://user-images.githubusercontent.com/51977119/211654459-f98e1e8e-da74-4002-9977-0ebfee21f131.png)
 

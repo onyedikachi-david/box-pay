@@ -12,6 +12,19 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 // Imports token price conversioner library
 import "./PriceConverter.sol";
 
+// Deployed address (BoxPay): First deployed: 0xB8CCCDE08fB76050b5BCF65e051eb2c1b085F7a5, second deploy: 0x4B57b9A0f6b4eA1786c9C89B713e7f3209aE04C9
+
+// forwarder Address: 0xB7eE72448D43844560976cEB6701FB9ebeB6626e, 0xe5E95B180C6428263CE49F71675E7aa1e9716780
+// AggregatorNative Address: 0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada
+// AggregatorUSDC Address: 0x572dDec9087154dC5dfBB1546Bb62713147e0Ab0
+// AggregatorUSDT Address: 0x92C09849638959196E976289418e5973CC96d645
+// AggregatorDAI Address: 0x0FCAa9c899EC5A91eBc3D5Dd869De833b06fB046
+// AggregatordBTC Address: 0x007A22900a3B98143368Bd5906f8E17e9867581b
+// USDCAddress Address: 0xe11A86849d99F524cAC3E7A0Ec1241828e332C62
+// USDTAddress Address: 0xA02f6adc7926efeBBd59Fd43A84f4E0c0c91e832
+// DAIAddress Address: 0xd393b1E02dA9831Ff419e22eA105aAe4c47E1253
+// WBTCAddress Address: 0x0d787a4a1548f673ed375445535a6c7A1EE56180
+
 // Reverting Errors
 error __AmountEmpty();
 error __NotSenderOrNotActive();
@@ -20,7 +33,7 @@ error __InvalidCode();
 error __TransferFailed();
 error __TransferWithdrawn();
 
-contract PayLock is ERC2771Context, Ownable {
+contract PayBox is ERC2771Context, Ownable {
     // Libraries
     // ./PriceConverter gets token price conversions for detrmining max transaction fee
     using PriceConverter for uint256;
